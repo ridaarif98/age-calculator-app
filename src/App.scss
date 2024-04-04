@@ -1,0 +1,77 @@
+
+.App {
+  // text-align: center;
+  font-size: 32px;
+  position: relative;
+  padding: 2vh 5vw;
+  background-color: hsl(0, 0%, 100%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem 1rem 10rem 1rem;
+
+  form {
+      .input-div {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 5vh;
+        .input-detail {
+          display: flex;
+          flex-direction: column;
+          margin: 1vh 1vw;
+          label {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            color: hsl(0, 1%, 44%);
+            font-size: 17px;
+            font-weight: 800;
+            letter-spacing: 0.2cap;
+            padding: 1vh 0;
+            margin: 1vh 0.1vw;
+            &.errorLabel {
+              color: hsl(0, 100%, 67%);
+            }
+          }
+    
+          input {
+            padding: 2vh 1vw;
+            border-radius: 7px;
+            border: 1px solid hsl(0, 0%, 86%);
+            box-shadow: none;
+            font-size: 32px;
+            font-weight: 800;
+            max-width: 8vw;
+            &:hover {
+              border: 1px solid hsl(0, 1%, 44%) !important;
+            }
+            &.error {
+              border:1px solid hsl(0, 100%, 67%) !important;
+            }
+          }
+        }
+      }
+      button {
+        background: url('../src/assets/images/icon-arrow.svg') no-repeat;
+        background-size: cover;
+        height: 4vh;
+        width: 5vw;
+        stroke: #282c34;
+      }
+  }
+  
+  .age h1 {
+    font-weight: bold;
+    font-size: 3em;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+.errorText {
+  color: hsl(0, 100%, 67%);
+  font-size: 17px;
+}
