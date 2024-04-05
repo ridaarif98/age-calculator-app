@@ -8,19 +8,20 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 50vw;
   transform: translate(-50%, -50%);
   border-radius: 1rem 1rem 10rem 1rem;
 
   form {
       .input-div {
         display: flex;
-        justify-content: center;
+        justify-content: left;
         text-align: center;
         margin-top: 5vh;
         .input-detail {
           display: flex;
           flex-direction: column;
-          margin: 1vh 1vw;
+          margin: 1vh 1vw 1vh 0;
           label {
             display: flex;
             flex-direction: column;
@@ -53,12 +54,26 @@
           }
         }
       }
-      button {
-        background: url('../src/assets/images/icon-arrow.svg') no-repeat;
-        background-size: cover;
-        height: 4vh;
-        width: 5vw;
-        stroke: #282c34;
+      .btn-div {
+        display: flex;
+        flex-direction: row;
+        // justify-content: space-between;
+        align-items: center;
+        .line{
+          background-color:hsl(0, 0%, 86%);
+          height: 1px;
+          width: 95%;
+        }
+        button {
+          height: 10vh;
+          width: 7vw;
+          text-align: center;
+          border-radius: 50%;
+          font-weight: 900;
+          border: none;
+          stroke-width: 2%;
+          background-color: hsl(259, 100%, 65%);
+        }
       }
   }
   .age h1 {
@@ -66,6 +81,9 @@
     font-size: 3em;
     padding: 0;
     margin: 0;
+    span {
+      color: hsl(259, 100%, 65%);
+    }
   }
 }
 
