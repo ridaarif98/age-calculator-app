@@ -1,17 +1,61 @@
 
 .App {
-  // text-align: center;
   font-size: 32px;
   position: relative;
   padding: 2vh 5vw;
   background-color: hsl(0, 0%, 100%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 50vw;
-  transform: translate(-50%, -50%);
+  width: fit-content;
+  margin-top: 15vh;
+  margin-bottom: 10vh;
   border-radius: 1rem 1rem 10rem 1rem;
-
+  @media only screen and (max-width: 375px) {
+    font-size: 22px;
+    padding: 5vh 3vw !important;
+    border-radius: 1.5rem 1.5rem 7rem 1.5rem !important;
+    form {
+      .input-div {
+        margin-top: 3vh;
+        .input-detail {
+          label {
+            font-size: 14px !important;
+            font-weight: 700 !important;
+            padding: 1vh 1vw !important;
+          }
+          input {
+            padding: 2vh 1vw;
+            border-radius: 7px;
+            border: 1px solid hsl(0, 0%, 86%);
+            box-shadow: none;
+            margin: 0.3vh 1vw;
+            font-size: 15px !important;
+            max-width: 20vw !important;
+          }
+        }
+      }
+      .btn-div {
+        margin-top: 5vh !important;
+        padding: 0.5vh 3vw !important ;
+        .line{
+          width: 40% !important;
+        }
+        #second-line {
+          display: block !important;
+        }
+        button {
+          width: 15vw !important;
+          img {
+          width: 7vw;
+         }
+        }
+      }
+    }
+    .age{
+      padding: 1vh 3vw;
+      h1 {
+        font-size: 2.5em !important;
+      }
+    }
+  }
   form {
       .input-div {
         display: flex;
@@ -57,12 +101,14 @@
       .btn-div {
         display: flex;
         flex-direction: row;
-        // justify-content: space-between;
         align-items: center;
         .line{
           background-color:hsl(0, 0%, 86%);
           height: 1px;
           width: 95%;
+        }
+        #second-line {
+          display: none;
         }
         button {
           height: 10vh;
@@ -92,3 +138,4 @@
   color: hsl(0, 100%, 67%);
   font-size: 17px;
 }
+
