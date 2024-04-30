@@ -1,0 +1,141 @@
+
+.App {
+  font-size: 32px;
+  position: relative;
+  padding: 2vh 5vw;
+  background-color: hsl(0, 0%, 100%);
+  width: fit-content;
+  margin-top: 15vh;
+  margin-bottom: 10vh;
+  border-radius: 1rem 1rem 10rem 1rem;
+  @media only screen and (max-width: 375px) {
+    font-size: 22px;
+    padding: 5vh 3vw !important;
+    border-radius: 1.5rem 1.5rem 7rem 1.5rem !important;
+    form {
+      .input-div {
+        margin-top: 3vh;
+        .input-detail {
+          label {
+            font-size: 14px !important;
+            font-weight: 700 !important;
+            padding: 1vh 1vw !important;
+          }
+          input {
+            padding: 2vh 1vw;
+            border-radius: 7px;
+            border: 1px solid hsl(0, 0%, 86%);
+            box-shadow: none;
+            margin: 0.3vh 1vw;
+            font-size: 15px !important;
+            max-width: 20vw !important;
+          }
+        }
+      }
+      .btn-div {
+        margin-top: 5vh !important;
+        padding: 0.5vh 3vw !important ;
+        .line{
+          width: 40% !important;
+        }
+        #second-line {
+          display: block !important;
+        }
+        button {
+          width: 15vw !important;
+          img {
+          width: 7vw;
+         }
+        }
+      }
+    }
+    .age{
+      padding: 1vh 3vw;
+      h1 {
+        font-size: 2.5em !important;
+      }
+    }
+  }
+  form {
+      .input-div {
+        display: flex;
+        justify-content: left;
+        text-align: center;
+        margin-top: 5vh;
+        .input-detail {
+          display: flex;
+          flex-direction: column;
+          margin: 1vh 1vw 1vh 0;
+          label {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            color: hsl(0, 1%, 44%);
+            font-size: 17px;
+            font-weight: 800;
+            letter-spacing: 0.2cap;
+            padding: 1vh 0;
+            margin: 1vh 0.1vw;
+            &.errorLabel {
+              color: hsl(0, 100%, 67%);
+            }
+          }
+    
+          input {
+            padding: 2vh 1vw;
+            border-radius: 7px;
+            border: 1px solid hsl(0, 0%, 86%);
+            box-shadow: none;
+            font-size: 32px;
+            font-weight: 800;
+            max-width: 8vw;
+            &:hover {
+              border: 1px solid hsl(0, 1%, 44%) !important;
+            }
+            &.error {
+              border:1px solid hsl(0, 100%, 67%) !important;
+            }
+          }
+        }
+      }
+      .btn-div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .line{
+          background-color:hsl(0, 0%, 86%);
+          height: 1px;
+          width: 95%;
+        }
+        #second-line {
+          display: none;
+        }
+        button {
+          height: 10vh;
+          width: 7vw;
+          text-align: center;
+          border-radius: 50%;
+          font-weight: 900;
+          border: none;
+          stroke-width: 2%;
+          background-color: hsl(259, 100%, 65%);
+        }
+      }
+  }
+  .age h1 {
+    font-weight: bold;
+    font-size: 3em;
+    padding: 0;
+    margin: 0;
+    span {
+      color: hsl(259, 100%, 65%);
+    }
+  }
+}
+
+
+.errorText {
+  color: hsl(0, 100%, 67%);
+  font-size: 17px;
+}
+
